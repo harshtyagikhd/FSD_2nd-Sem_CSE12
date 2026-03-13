@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Processor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-wrap">
+        <section class="app-card">
+            <h1>Student Marks Processor</h1>
+            <p class="subtitle">Store student records and process totals, averages, and performance filters.</p>
+
+            <div class="form-grid">
+                <input type="text" id="studentName" placeholder="Student Name">
+                <input type="text" id="rollNumber" placeholder="Roll Number">
+                <input type="number" id="mathMarks" placeholder="Math Marks" min="0" max="100">
+                <input type="number" id="scienceMarks" placeholder="Science Marks" min="0" max="100">
+                <input type="number" id="englishMarks" placeholder="English Marks" min="0" max="100">
+                <button type="button" class="primary" onclick="addStudent()">Add Student</button>
+            </div>
+
+            <div class="actions">
+                <button type="button" onclick="displayAllStudents()">Display All Students</button>
+                <button type="button" onclick="showTotalMarks()">Calculate Total Marks</button>
+                <button type="button" onclick="showAverageMarks()">Calculate Average Marks</button>
+                <button type="button" onclick="showAbove80()">Above 80 Average</button>
+                <button type="button" onclick="showFailedStudents()">Failed Students</button>
+                <button type="button" onclick="showStudentCount()">Count Students</button>
+            </div>
+
+            <div id="output" class="output"></div>
+        </section>
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+</html>

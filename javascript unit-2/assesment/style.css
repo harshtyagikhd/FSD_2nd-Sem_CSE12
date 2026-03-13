@@ -1,0 +1,149 @@
+:root {
+    --bg-start: #fffaf0;
+    --bg-end: #eef9ff;
+    --card: #ffffff;
+    --text: #1d2a36;
+    --muted: #5d6d7c;
+    --accent: #0f6f8c;
+    --accent-strong: #0a5368;
+    --border: #d9e5ef;
+    --shadow: 0 16px 35px rgba(16, 45, 71, 0.14);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text);
+    background: radial-gradient(circle at 8% 10%, #ffffff 0%, transparent 40%),
+        linear-gradient(125deg, var(--bg-start), var(--bg-end));
+}
+
+.page-wrap {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.app-card {
+    width: min(980px, 100%);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    padding: 26px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.9rem;
+}
+
+.subtitle {
+    margin: 8px 0 20px;
+    color: var(--muted);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+input {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 0.98rem;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 11px 12px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff;
+    background: var(--accent);
+    transition: transform 0.18s ease, background 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    background: var(--accent-strong);
+}
+
+.primary {
+    background: #1d8f54;
+}
+
+.primary:hover {
+    background: #146d3f;
+}
+
+.actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 10px;
+}
+
+.output {
+    margin-top: 18px;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+    min-height: 42px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    min-width: 740px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #eaf0f6;
+}
+
+thead th {
+    background: #f7fafc;
+}
+
+.highlight {
+    color: #0e7c4a;
+    font-weight: 700;
+}
+
+.fail {
+    color: #b93b3b;
+    font-weight: 700;
+}
+
+@media (max-width: 760px) {
+    .app-card {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 1.55rem;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+}

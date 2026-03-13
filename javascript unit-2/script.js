@@ -13,7 +13,7 @@ let stu={
     email:"harshitgts777@gmail.com"
 }
 console.log(stu.email);
-Arithmatic Operators
+// Arthimatic Operators
 let a=10;
 let b=5;
 console.log(a+b);
@@ -25,7 +25,7 @@ console.log(++a);
 console.log(--a);
 console.log(a--);
 console.log(a);
-Assignment Operators
+// Assignment Operators
 let a=10;
 a+=5;
 console.log(a);
