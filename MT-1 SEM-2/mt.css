@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.box {
+    text-align: center;
+}
+
+input, button {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: #ffffff;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e0e7ff;
+    transform: scale(1.05);
+}
