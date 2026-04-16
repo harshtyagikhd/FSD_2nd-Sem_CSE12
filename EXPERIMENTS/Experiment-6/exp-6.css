@@ -3,7 +3,6 @@ body {
     background-color: #0f172a;
     text-align: center;
 }
-
 .container {
     width: 650px;
     margin: 50px auto;
@@ -13,7 +12,6 @@ body {
     box-shadow: 0 0 10px #000;
     color: #f1f5f9;
 }
-
 button {
     padding: 8px 12px;
     margin: 5px;
